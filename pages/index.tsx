@@ -15,14 +15,20 @@ export default function Index({ allPosts: { edges }, preview }) {
   return (
     <Layout preview={preview}>
       <Head>
-        <title>Next.js Blog Example with {CMS_NAME}</title>
+        <title>Blog Utilizando {CMS_NAME}</title>
       </Head>
       <Container>
         <Intro />
+        <br />
+        <br />
+        <br />
+        <hr />
+        <br />
+        <br />
+        <br />
         {heroPost && (
           <HeroPost
             title={heroPost.title}
-            coverImage={heroPost.featuredImage}
             date={heroPost.date}
             author={heroPost.author}
             slug={heroPost.slug}
